@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "movies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "required": true
+          },
+          "plot": {
+            "type": "string",
+            "required": true
+          },
+          "price": {
+            "required": true,
+            "type": "number"
+          },
+          "created_at": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    },
+    "seasons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "required": true
+          },
+          "plot": {
+            "type": "string",
+            "required": true
+          },
+          "price": {
+            "type": "number",
+            "required": true
+          },
+          "created_at": {
+            "type": "string",
+            "required": true
+          },
+          "episodes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "required": true
+                },
+                "plot": {
+                  "type": "string",
+                  "required": true
+                },
+                "number": {
+                  "type": "integer",
+                  "required": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

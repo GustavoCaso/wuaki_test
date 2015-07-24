@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "attributes": {
+    "title":{
+      "required": true,
+      "type": "string"
+    },
+    "plot":{
+      "required": true,
+      "type": "string"
+    },
+    "price":{
+      "required": true,
+      "type": "number"
+    },
+    "created_at":{
+      "required": true,
+      "type": "string"
+    },
+    "episodes":{
+      "type": "array",
+      "items":{
+        "type": "object",
+        "properties": {
+          "title":{
+            "required": true,
+            "type": "string"
+          },
+          "plot":{
+            "required": true,
+            "type": "string"
+          },
+          "number":{
+            "required": true,
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "required" : ["movies"],
+  "properties": {
+    "movies": {
+      "type": "array",
+      "items":{
+        "type": "object",
+        "properties":{
+          "title": {
+            "type": "string",
+            "required": true
+          },
+          "plot":{
+            "type": "string",
+            "required": true
+          },
+          "price":{
+            "type": "number",
+            "required": true
+          },
+          "created_at":{
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+
+    },
+    "meta":{
+      "type": "object",
+      "properties":{
+        "total":{
+          "type": "integer",
+          "required": true
+        }
+      }
+    }
+  }
+}

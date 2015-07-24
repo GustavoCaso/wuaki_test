@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties":{
+    "title":{
+      "type":"string",
+      "required": true
+    },
+    "plot":{
+      "type":"string",
+      "required": true
+    },
+    "price":{
+      "type":"number",
+      "required": true
+    },
+    "created_at":{
+      "type":"string",
+      "required": true
+    }
+  }
+}
